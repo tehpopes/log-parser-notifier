@@ -22,12 +22,18 @@ optional arguments:
 
 ## Unit Tests
 In root of repo run following:
+
 $ pytest test 
 
 ## Run on Docker (Ubuntu 18.04)
 In root of repo run following:
+
 $ docker build -t {image_name}:{tag} .
+
 $ docker run {image_name}:{tag}
+
 E.g.
+
 $ docker build -t log_parser_notifier:v0.0.1 .
+
 $ docker run log_parser_notifier:v.0.0.1
