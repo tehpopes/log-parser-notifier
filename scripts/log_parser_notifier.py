@@ -1,5 +1,7 @@
 # Language: Python3
 # OS: Ubuntu 18.04
+# Usage: python3 log_parser_notifier.py [-h] -d DIRECTORY -u USERS -m MESSAGES
+# E.g.: python3 scripts/log_parser_notifier.py -d logs/ -u configs/users.csv -m configs/messages.csv
 
 import csv
 import argparse
@@ -47,10 +49,13 @@ def read_logs(directory, id_to_users_dict, message_to_id_dict):
     if log_f.is_file():
       alert_users(open(log_f,'r'), id_to_users_dict, message_to_id_dict)
 
-if __name__ == '__main__':
+def run():
   directory, users, messages = parse_input()
   
   message_to_id_dict = parse_messages_csv(messages)
   id_to_users_dict = parse_users_csv(users)
   
   read_logs(directory, message_to_id_dict, id_to_users_dict)   
+
+if __name__ == '__main__':
+  run()
