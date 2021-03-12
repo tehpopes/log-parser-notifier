@@ -6,10 +6,7 @@ usage: python3 log_parser_notifier.py [-h] -d DIRECTORY -u USERS -m MESSAGES
 
 E.g.: python3 scripts/log_parser_notifier.py -d logs/ -u configs/users.csv -m configs/messages.csv
 
-reads ASCII log files and "alerts" when a log message that a user is subscribed to appears.
-can specify relative or absolute path for all provided paths.
-
-arguments:
+arguments (can specify relative or absolute paths):
 
   -d DIRECTORY, --directory DIRECTORY (path to log directory)
 
