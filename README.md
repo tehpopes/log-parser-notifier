@@ -11,20 +11,15 @@ can specify relative or absolute path for all provided paths.
 
 arguments:
 
-  -d DIRECTORY, --directory DIRECTORY
+  -d DIRECTORY, --directory DIRECTORY (path to log directory)
 
-                        path to log directory
+  -u USERS, --users USERS (path to users.csv file)
 
-  -u USERS, --users USERS
-
-                        path to users.csv file
-
-  -m MESSAGES, --messages MESSAGES
-
-                        path to messages.csv file
+  -m MESSAGES, --messages MESSAGES (path to messages.csv file)
 
 optional arguments:
-  -h, --help            show a similar help message and exit
+
+  -h, --help            (show a similar help message and exit)
 
 ## Unit Tests
 In root of repo run following:
