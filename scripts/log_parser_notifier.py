@@ -38,7 +38,7 @@ def parse_users_csv(users):
 def alert_users(log_file, message_to_id_dict, id_to_users_dict):
   for line in log_file:
     for message, id in message_to_id_dict.items():
-      if message in line:
+      if id in id_to_users_dict and message in line:
         for user in id_to_users_dict[id]:
           print(f'Notifying {user} of {id}! {message}')
 
