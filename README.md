@@ -10,11 +10,17 @@ reads ASCII log files and "alerts" when a log message that a user is subscribed 
 can specify relative or absolute path for all provided paths.
 
 arguments:
+
   -d DIRECTORY, --directory DIRECTORY
+
                         path to log directory
+
   -u USERS, --users USERS
+
                         path to users.csv file
+
   -m MESSAGES, --messages MESSAGES
+
                         path to messages.csv file
 
 optional arguments:
