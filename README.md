@@ -16,3 +16,8 @@ arguments:
 
 optional arguments:
   -h, --help            show this help message and exit
+
+## Run on Docker (Ubuntu 18.04)
+In root of repo run following:
+$ docker build -t {image_name}:{tag} .
+$ docker run {image_name}:{tag}
